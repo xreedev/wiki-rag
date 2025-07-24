@@ -6,14 +6,14 @@ from warehouse import EmbeddingDB
 from gemini_agent import generate_evaluation
 
 #get text from API
-# text = get_wikipedia_text("Large_language_model")
-# text=text[:5000]
-#
+text = get_wikipedia_text("Large_language_model")
+text=text[:5000]
+
 # #convert to chunks
-# docs = create_chunks(text)
-# chunks = [doc.page_content for doc in docs]
+docs = create_chunks(text)
+chunks = [doc.page_content for doc in docs]
 # #vectorise the chunks
-# embeddings = embed_chunks(chunks)
+embeddings = embed_chunks(chunks)
 
 #store in SQLite
 db_path = 'database/new.db'
