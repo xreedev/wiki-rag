@@ -9,7 +9,7 @@ from gemini_agent import generate_evaluation
 text = get_wikipedia_text("Large_language_model")
 text=text[:5000]
 
-# #convert to chunks
+#convert to chunks
 docs = create_chunks(text)
 chunks = [doc.page_content for doc in docs]
 # #vectorise the chunks
@@ -18,7 +18,7 @@ embeddings = embed_chunks(chunks)
 #store in SQLite
 db_path = 'database/new.db'
 database = EmbeddingDB(db_path)
-# database.insert_vector_data(chunks, embeddings)
+database.insert_vector_data(chunks, embeddings)
 
 #create faiss index using id and vectors
 data = database.get_vectors_and_ids()
