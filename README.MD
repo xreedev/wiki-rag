@@ -2,6 +2,12 @@
 
 A Python-based Retrieval-Augmented Generation (RAG) pipeline using Wikipedia as the knowledge base. This project demonstrates how to fetch, preprocess, embed, store, and query Wikipedia content to enhance the capabilities of a large language model (LLM).
 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue) 
+![FastAPI](https://img.shields.io/badge/FastAPI-async--framework-teal) 
+![FAISS](https://img.shields.io/badge/FAISS-vector%20store-purple) 
+![OpenAI](https://img.shields.io/badge/OpenAI-embeddings-lightgrey) 
+![Gemini](https://img.shields.io/badge/Gemini-LLM-yellow) 
+![Wikipedia](https://img.shields.io/badge/Wikipedia-API-black)
 ---
 
 ## 🧩 Table of Contents
